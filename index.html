@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFRESH - Trái Cây Sạch 100% Organic</title>
+    <link href="styles/dinhdangg.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <i class="fa-solid fa-bolt"></i> MIỄN PHÍ SHIP CHO ĐƠN HÀNG TRÊN 500.000đ | HOTLINE: 1900 FRESH
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="image/logoo.jpg" alt="Logo">
+            <h2>P<span>FRESH</span></h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="Giới thiệu.html">Giới Thiệu</a>
+            <a href="Sản phẩm.html">Sản Phẩm</a>
+            <a href="Giỏ quà tặng.html">Giỏ Quà Tặng</a>
+            <a href="Hội viên.html">Hội Viên</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="cart-count" id="cartCount">0</div>
+            </div>
+            <button class="login-btn" onclick="gotoAccount()">Đăng Nhập</button>
+        </div>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>Trái Cây Sạch 100% Organic</h1>
+            <p>Tươi ngon từng quả - Giao hàng siêu tốc tận khay nhà bạn</p>
+            <button onclick="goShop()">Mua Ngay Hôm Nay</button>
+        </div>
+        <img class="animated-gif" src="image/pngtree-fresh-and-transparent-strawberry-fruit-png-image_9057037.png" alt="Strawberry Animation">
+    </section>
+
+    <div class="features">
+        <div class="feature-box">
+            <i class="fa-solid fa-truck-ramp-box"></i>
+            <h3>Giao Hỏa Tốc</h3>
+            <p>Ship nhanh lạnh trong 1 Giờ</p>
+        </div>
+        <div class="feature-box">
+            <i class="fa-solid fa-shield-heart"></i>
+            <h3>Đổi Trả 100%</h3>
+            <p>Bù hàng nếu quả bị hỏng</p>
+        </div>
+        <div class="feature-box">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>Chuẩn VietGAP</h3>
+            <p>Rõ nguồn gốc xuất xứ</p>
+        </div>
+    </div>
+
+    <section id="products-section">
+        <h2 class="title">Sản Phẩm Nổi Bật</h2>
+        <p class="subtitle">Trái cây tươi ngon hái mới mỗi ngày từ nông trại hữu cơ</p>
+        
+        <div class="products">
+            <div class="card">
+                <div class="badge">Hot</div>
+                <img src="image/envy4.jpg" alt="Táo Envy">
+                <div class="content">
+                    <h3>Táo Envy Nhập Khẩu Mỹ Giòn Ngọt Loại 1</h3>
+                    <div class="price">199.000đ / kg</div>
+                    <button class="buy" onclick="addCart()">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="badge">VietGAP</div>
+                <img src="image/gia-nho-sua-han-quoc-fuji-2.jpg" alt="Nho Mẫu Đơn">
+                <div class="content">
+                    <h3>Nho Xanh Sữa Chuẩn VietGAP Tươi Mọng</h3>
+                    <div class="price">350.000đ / kg</div>
+                    <button class="buy" onclick="addCart()">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="badge">New</div>
+                <img src="image/Vuon-dau-tay-Da-Lat-gia-re-Minh-Hoa.jpg" alt="Dâu Tây">
+                <div class="content">
+                    <h3>Dâu Tây Hữu Cơ Đà Lạt Hộp 500g</h3>
+                    <div class="price">150.000đ / hộp</div>
+                    <button class="buy" onclick="addCart()">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p><strong>PFRESH Fruit Mart</strong></p>
+        <p>Họ tên: HUỲNH THỊ MỸ PHỤNG | Lớp: CD25TKDH | Hệ thống Trái Cây Sạch Toàn Quốc</p>
+        <p>Địa chỉ trụ sở chính: 123 Đường Nguyễn An Ninh, TP. Vũng Tàu | Hotline: 0123.456.789</p>
+        <p>Website đối tác liên kết nông sản: <a href="https://PFRESH.com" target="_blank">PFRESH.com</a></p>
+    </footer>
+
+    <!-- KHUNG CHATBOX CHUẨN (CHỈ XUẤT HIỆN DUY NHẤT 1 LẦN Ở CUỐI) -->
+    <div class="chat-button" onclick="toggleChat()">
+        <i class="fa-solid fa-comments"></i>
+    </div>
+
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <div class="chat-title">
+                <span class="status-dot"></span>
+                <div>
+                    <h4>Chuyên Viên PFRESH</h4>
+                    <p>Đang trực tuyến • Hỗ trợ 24/7</p>
+                </div>
+            </div>
+            <i class="fa-solid fa-xmark close-icon" onclick="toggleChat()"></i>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                💚 <strong>Dạ PFRESH Fruit Mart xin chào quý khách!</strong><br>
+                Hôm nay chúng mình có Táo Envy Mỹ giòn ngọt và Dâu Tây Đà Lạt hữu cơ vừa cập bến tươi rói ạ! Bạn cần shop tư vấn sản phẩm, thiết kế giỏ quà hay hỗ trợ kiểm tra đơn hàng thế ạ? Shop luôn sẵn sàng phục vụ bạn nhiệt tình nhất! 🥰
+            </div>
+            
+            <div class="chat-suggestions">
+                <button class="suggest-btn" onclick="selectSuggestion('🍎 Tư vấn trái cây hot hôm nay')">🍎 Trái cây hot hôm nay</button>
+                <button class="suggest-btn" onclick="selectSuggestion('🎁 Thiết kế giỏ quà biếu tặng')">🎁 Thiết kế giỏ quà tặng</button>
+                <button class="suggest-btn" onclick="selectSuggestion('🛵 Chính sách đổi trả & Freeship')">🛵 Chính sách ship & đổi trả</button>
+                <button class="suggest-btn" onclick="selectSuggestion('⭐ Đăng ký thẻ hội viên VIP')">⭐ Thẻ hội viên VIP</button>
+            </div>
+        </div>
+        
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Nhập câu hỏi của bạn tại đây..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script/taitrang.js" type="text/javascript"></script>
+</body>
+</html>

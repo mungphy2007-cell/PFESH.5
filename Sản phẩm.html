@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm - PFRESH</title>
+    <link href="styles/dinhdangg.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <i class="fa-solid fa-bolt"></i> MIỄN PHÍ SHIP CHO ĐƠN HÀNG TRÊN 500.000đ | HOTLINE: 1900 FRESH
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="image/logoo.jpg" alt="Logo">
+            <h2>P<span>FRESH</span></h2>
+        </div>
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="Giới thiệu.html">Giới Thiệu</a>
+            <a href="Sản phẩm.html">Sản Phẩm</a>
+            <a href="Giỏ quà tặng.html">Giỏ Quà Tặng</a>
+            <a href="Hội viên.html">Hội Viên</a>
+        </nav>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="cart-count" id="cartCount">0</div>
+            </div>
+            <button class="login-btn" onclick="gotoAccount()">Đăng Nhập</button>
+        </div>
+    </header>
+
+    <section class="products-hero-banner">
+        <div class="banner-content">
+            <h1>Danh Mục Trái Cây</h1>
+            <p>Thơm ngon - Tươi mát - An toàn cho sức khỏe</p>
+        </div>
+    </section>
+
+    <section id="products-section" class="products-page-wrapper">
+        <div class="products-filter-tabs">
+            <button class="filter-tab-btn active" onclick="scrollToSection('imported-fruits')">Trái Cây Nhập Khẩu</button>
+            <button class="filter-tab-btn" onclick="scrollToSection('local-fruits')">Trái Cây Việt Nam</button>
+        </div>
+
+        <div id="imported-fruits" class="category-block-title">
+            <h3>Trái Cây Nhập Khẩu</h3>
+        </div>
+        
+        <div class="products" style="margin-bottom: 60px;">
+            <div class="card">
+                <div class="badge">Bán chạy</div>
+                <img src="image/envy4.jpg" alt="Táo envy Mỹ Nhập Khẩu">
+                <div class="content">
+                    <h3>Táo Envy Mỹ Giòn Ngọt Thượng Hạng</h3>
+                    <div class="price">350.000đ</div>
+                    <button class="buy" onclick="addCart()">Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Bán chạy</div>
+                <img src="image/cherry-my.jpg" alt="Cherry Mỹ">
+                <div class="content">
+                    <h3>Cherry Mỹ Quả To Mọng Đậm Vị</h3>
+                    <div class="price">850.000đ</div>
+                    <button class="buy" onclick="addCart()">Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge animated-new">Mới</div>
+                <img src="image/1667961566_VCdYELIbGBASNuoc_1667962167-php4cc8za.png" alt="Nho Mẫu Đơn">
+                <div class="content">
+                    <h3>Nho Mẫu Đơn Hàn Quốc Hộp Cao Cấp</h3>
+                    <div class="price">490.000đ</div>
+                    <button class="buy" onclick="addCart()">Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge animated-new">Mới</div>
+                <img src="image/Le-Han-Quoc-704x704.jpg" alt="Lê Hàn Quốc">
+                <div class="content">
+                    <h3>Lê Hàn Quốc Quả Căng Nước ngọt mát</h3>
+                    <div class="price">559.000đ</div>
+                    <button class="buy" onclick="addCart()">Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge discount-highlight">Ưu đãi</div>
+                <img src="image/viet-quat-new-zealand-2-min.jpg" alt="Việt Quất New Zealand">
+                <div class="content">
+                    <h3>Việt Quất Hữu Cơ New Zealand</h3>
+                    <div class="price">280.000đ</div>
+                    <button class="buy" onclick="addCart()">Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Bán chạy</div>
+                <img src="image/kiwi-vang-new-zealand__1__2763e39a36ee4914965292b190a02193_master.jpg" alt="Kiwi Vàng New Zealand">
+                <div class="content">
+                    <h3>Kiwi Vàng Tươi New Zealand</h3>
+                    <div class="price">249.000đ</div>
+                    <button class="buy" onclick="addCart()">Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Bán chạy</div>
+                <img src="image/nho_ngon_tay_-min.jpg" alt="Nho Ngón Tay Úc">
+                <div class="content">
+                    <h3>Nho Ngón Tay Úc Không Hạt Ngọt Đậm</h3>
+                    <div class="price">290.000đ</div>
+                    <button class="buy" onclick="addCart()">Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border: 0; height: 1px; background: #e0f0e9; margin-top: 50px; margin-bottom: 50px;">
+
+        <div id="local-fruits" class="category-block-title local-accent">
+            <h3>Trái Cây Việt Nam</h3>
+        </div>
+        
+        <div class="products">
+            <div class="card">
+                <div class="badge">Bán chạy</div>
+                <img src="image/8936140320468-DT-1.jpg.webp" alt="Dưa hấu Long An">
+                <div class="content">
+                    <h3>Dưa Hấu Đỏ Đặc Sản Long An</h3>
+                    <div class="price">35.000đ</div>
+                    <button class="buy" onclick="addCart()">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Bán chạy</div>
+                <img src="image/nhan-xuong-4-min.jpg" alt="Nhãn xuồng cơm vàng">
+                <div class="content">
+                    <h3>Nhãn Xuồng Cơm Vàng Vũng Tàu</h3>
+                    <div class="price">59.000đ</div>
+                    <button class="buy" onclick="addCart()">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge">Xoài Cát</div>
+                <img src="image/xoai-cat-hoa-loc.webp" alt="Xoài Cát Hòa Lộc">
+                <div class="content">
+                    <h3>Xoài Cát Hòa Lộc Chín Cây Loại 1</h3>
+                    <div class="price">85.000đ</div>
+                    <button class="buy" onclick="addCart()">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge discount-highlight">Ưu đãi</div>
+                <img src="image/ve-tien-giang-thuong-thuc-vu-sua-lo-ren-vinh-kim-nuc-tieng-2-1650969320.jpg" alt="Vú Sữa Lò Rèn">
+                <div class="content">
+                    <h3>Vú Sữa Lò Rèn Vĩnh Kim Ngọt Lịm</h3>
+                    <div class="price">75.000đ</div>
+                    <button class="buy" onclick="addCart()">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge discount-highlight">Ưu đãi</div>
+                <img src="image/thanhlongruotdo.webp" alt="Thanh long ruột đỏ">
+                <div class="content">
+                    <h3>Thanh Long Ruột Đỏ Bình Thuận</h3>
+                    <div class="price">35.000đ</div>
+                    <button class="buy" onclick="addCart()">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge discount-highlight">Ưu đãi</div>
+                <img src="image/chomchomjpeg-1666149530891-1666149530965268155195.webp" alt="Chôm chôm thái">
+                <div class="content">
+                    <h3>Chôm Chôm Thái Miệt Vườn Tươi Giòn</h3>
+                    <div class="price">40.000đ</div>
+                    <button class="buy" onclick="addCart()">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="badge animated-new">Mới</div>
+                <img src="image/Ajuma_mang-cut-lai-thieu-thuan-tu-nhien2_20220505092008757.jpg" alt="Măng cụt Lái Thiêu">
+                <div class="content">
+                    <h3>Măng Cụt Lái Thiêu Chua Ngọt Tự Nhiên</h3>
+                    <div class="price">65.000đ</div>
+                    <button class="buy" onclick="addCart()">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>PFRESH Fruit Mart</strong></p>
+        <p>Họ tên: HUỲNH THỊ MỸ PHỤNG | Lớp: CD25TKDH | Hệ thống Trái Cây Sạch Toàn Quốc</p>
+        <p>Địa chỉ trụ sở chính: 123 Đường Nguyễn An Ninh, TP. Vũng Tàu | Hotline: 0123.456.789</p>
+    </footer>
+
+    <div class="chat-button" onclick="toggleChat()">
+        <i class="fa-solid fa-comments"></i>
+    </div>
+
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <div class="chat-title">
+                <span class="status-dot"></span>
+                <div>
+                    <h4>Chuyên Viên PFRESH</h4>
+                    <p>Đang trực tuyến • Hỗ trợ 24/7</p>
+                </div>
+            </div>
+            <i class="fa-solid fa-xmark close-icon" onclick="toggleChat()"></i>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                💚 <strong>Dạ PFRESH Fruit Mart xin chào bạn!</strong><br>
+                Hôm nay kho hàng có rất nhiều đợt trái cây nội địa và nhập khẩu tươi rói vừa về. Bạn cần shop tư vấn loại quả nào tốt cho sức khỏe hay giao hỏa tốc 1 giờ không ạ? 🥰
+            </div>
+            <div class="chat-suggestions">
+                <button class="suggest-btn" onclick="selectSuggestion('🍎 Trái cây nhập khẩu')">🍎 Trái cây nhập khẩu</button>
+                <button class="suggest-btn" onclick="selectSuggestion('🎁 Giỏ quà sang trọng')">🎁 Giỏ quà sang trọng</button>
+                <button class="suggest-btn" onclick="selectSuggestion('🛵 Phí ship hỏa tốc là bao nhiêu?')">🛵 Phí ship hỏa tốc</button>
+            </div>
+        </div>
+        
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Nhập câu hỏi của bạn tại đây..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script/taitrang.js" type="text/javascript"></script>
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+            
+            // Đổi class active cho tab tương ứng
+            const buttons = document.querySelectorAll('.filter-tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

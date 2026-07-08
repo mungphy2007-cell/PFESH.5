@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu - PFRESH</title>
+    <link href="styles/dinhdangg.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .main-banner {
+            width: 100%;
+            height: 350px; 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("image/Gemini_Generated_Image_mga8qtmga8qtmga8.png"); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        .banner-content h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .banner-content p {
+            font-size: 20px;
+            margin: 0;
+            font-weight: 300;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topbar">
+        <i class="fa-solid fa-bolt"></i> MIỄN PHÍ SHIP CHO ĐƠN HÀNG TRÊN 500.000đ | HOTLINE: 1900 FRESH
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="image/logoo.jpg" alt="Logo">
+            <h2>P<span>FRESH</span></h2>
+        </div>
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="Giới thiệu.html">Giới Thiệu</a>
+            <a href="Sản phẩm.html">Sản Phẩm</a>
+            <a href="Giỏ quà tặng.html">Giỏ Quà Tặng</a>
+            <a href="Hội viên.html">Hội Viên</a>
+        </nav>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="cart-count" id="cartCount">0</div>
+            </div>
+            <button class="login-btn" onclick="gotoAccount()">Đăng Nhập</button>
+        </div>
+    </header>
+
+    <!-- PHẦN BANNER MỚI THÊM VÀO ĐÂY -->
+    <section class="main-banner">
+        <div class="banner-content">
+            <h1>Trái Cây Sạch 100% Organic</h1>
+            <p>Tươi ngon từng quả - Giao hàng siêu tốc tận khay nhà bạn</p>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="image/giỏ trái cây hoàng gia.jpg" alt="Về PFresh">
+                <div class="about-badge">
+                    <b>10+</b>
+                    <span>Năm Kinh Nghiệm</span>
+                </div>
+            </div>
+            
+            <div class="about-text">
+                <span class="about-tag">VỀ THƯƠNG HIỆU PFRESH</span>
+                <h2 class="about-title">Hành Trình Mang Trái Cây Sạch Đến Mọi Nhà</h2>
+                <p class="about-description">
+                    Tại <b>PFRESH</b>, chúng tôi tin rằng sức khỏe bắt nguồn từ những gì tự nhiên nhất. Được thành lập với sứ mệnh kết nối người tiêu dùng với những nguồn nông sản đạt tiêu chuẩn quốc tế và nội địa cao cấp, mỗi quả trái cây tại cửa hàng đều phải trải qua quy trình kiểm định nghiêm ngặt nhằm mang đến sự an tâm tuyệt đối cho căn bếp nhà bạn.
+                </p>
+                
+                <div class="about-points">
+                    <div class="point-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <h4>Chất lượng hàng đầu</h4>
+                            <p>Trái cây nhập khẩu chính ngạch và đặc sản chuẩn VietGAP đầy đủ chứng nhận nguồn gốc.</p>
+                        </div>
+                    </div>
+                    <div class="point-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <h4>Bảo quản nghiêm ngặt</h4>
+                            <p>Hệ thống kho lạnh thông minh hiện đại, giữ trọn vẹn độ tươi ngon và lượng dưỡng chất tự nhiên vượt trội.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>PFRESH Fruit Mart</strong></p>
+        <p>Họ tên: HUỲNH THỊ MỸ PHỤNG | Lớp: CD25TKDH | Hệ thống Trái Cây Sạch Toàn Quốc</p>
+        <p>Địa chỉ trụ sở chính: 123 Đường Nguyễn An Ninh, TP. Vũng Tàu | Hotline: 0123.456.789</p>
+    </footer>
+
+    <div class="chat-button" onclick="toggleChat()">
+        <i class="fa-solid fa-comments"></i>
+    </div>
+
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <div class="chat-title">
+                <span class="status-dot"></span>
+                <div>
+                    <h4>Chuyên Viên PFRESH</h4>
+                    <p>Đang trực tuyến • Hỗ trợ 24/7</p>
+                </div>
+            </div>
+            <i class="fa-solid fa-xmark close-icon" onclick="toggleChat()"></i>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                💚 <strong>Dạ PFRESH Fruit Mart xin chào bạn!</strong><br>
+                Bạn đang xem thông tin giới thiệu về chúng mình đúng không ạ? Nếu cần hỗ trợ đặt hàng nhanh hay tư vấn quà tặng, bạn cứ nhắn tin cho em ngay tại đây nhé! 🥰
+            </div>
+            
+            <div class="chat-suggestions">
+                <button class="suggest-btn" onclick="selectSuggestion('🍎 Trái cây nhập khẩu')">🍎 Trái cây nhập khẩu</button>
+                <button class="suggest-btn" onclick="selectSuggestion('🎁 Giỏ quà sang trọng')">🎁 Giỏ quà sang trọng</button>
+                <button class="suggest-btn" onclick="selectSuggestion('🛵 Phí ship hỏa tốc là bao nhiêu?')">🛵 Phí ship hỏa tốc</button>
+            </div>
+        </div>
+        
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Nhập câu hỏi của bạn tại đây..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script/taitrang.js" type="text/javascript"></script>
+</body>
+</html>
